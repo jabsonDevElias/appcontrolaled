@@ -50,29 +50,15 @@ A interface é composta por três sliders (R, G, B), onde o usuário pode ajusta
 
 No arquivo app.tsx onde está a função `enviarCor()`, é necessário alterar o IP para o endereço IP do seu dispositivo (ESP32, por exemplo) conectado à mesma rede que o celular:
 
-```js
-function enviarCor() {
-  axios.post('http://192.168.0.0/', {
-    verde: cores[2].valor,
-    azul: cores[1].valor,
-    vermelho: cores[0].valor
-  })
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.error(error);
-  });
-}
-
 🔁 Altere http://192.168.0.0/ para o IP do seu ESP32 ou servidor.
 Você pode verificar o IP no monitor serial da IDE do Arduino ou usando ferramentas como o Fing no celular.
 
 Exemplo:
-
+```js
 axios.post('http://ipinformadopelomicroprocessador/', { ... });
 
----
+
+
 
 
 
