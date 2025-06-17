@@ -33,7 +33,7 @@ export default function App() {
 
   function enviarCor(){
 
-    axios.post('http://192.168.1.4/', {
+    axios.post('http://192.168.0.0/', {
         verde:cores[2].valor,
         azul:cores[1].valor,
         vermelho:cores[0].valor
